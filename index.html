@@ -1,18 +1,135 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
+  <title>Salmon Cookies Public Website</title>
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
-  <link rel="stylesheet" type='text/css' href="style.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
+  <link rel="stylesheet" type='text/css' href="./css/style.css"/>
+  <!-- using ./ before the file path indicates that it's in the current directory. -->
 
+  
   
 </head>
 <body>
-<h1 id="fishPic"></h1>
-<img width="100" height="200" src="https://github.com/codefellows/seattle-201d42/blob/master/class-06-dom-objects-domain_modeling/lab/assets/salmon.png">
-  <script src="cookie.js"></script> 
+<script src="cookie.js"></script> 
+
+<h1 id="famousPat"> Pat's Famous Salmon Cookies!</h1>
+
+<img id="salmon" src="./assets/salmon.png" alt="A luscious salmon caught off Alki">
+
+<h3>Check out our new new <a href="#shirt">T-shirts!</a></h3>
+  
+<h2>Our Salmon Cookies offer a unique taste, quintessentially Seattle. <br> We have several locations for your flavorful convenience.</h2>
+
+
+  <div class="boxed">
+  <div class="locationName">1st and Pine</div> 
+  <div>
+      <text class="description">Our flagship location. When Pat’s grandmother Jenny (second from left) came up with the idea for salmon cookies, Pat recognized the brilliance and went all in. Together, they revolutionized the concept of savory desserts. Today the whole family works here, even the kids Norma and Liam!</text>
+  </div>
+    <img id="family" src="./assets/family.jpg" alt="Pat's grandmother is ridiculously good looking from all that Omega 3">
+    <ul>
+      <li class="basicBullet">Visit us:</li>
+      <li>314 Pine Ave E, Seattle 98134</li>
+      <li class="basicBullet">Be sure to come between the hours of:</li>
+      <li>6AM and 8PM</li>
+      <li class="basicBullet">Give us a call:</li>
+      <li>(360) 314-FISH (3474)</li>
+      <li class="basicBullet">Shoot us an email:</li>
+      <li>pine@salmoncookies.com</li>
+    </ul>
+  </div>
+
+    <div class="boxed">
+
+      <div class="locationName">SeaTac</div> 
+    
+      <div>
+          <text class="description">By the airport!</text>
+      </div>
+        <img id="fish" src="./assets/fish.jpg" alt="Here's a fish cookie!">
+        <ul>
+          <li class="basicBullet">Visit us:</li>
+          <li>114 E Pine St, SeaTac 92134</li>
+          <li class="basicBullet">Be sure to come between the hours of:</li>
+          <li>6AM and 8PM</li>
+          <li class="basicBullet">Give us a call:</li>
+          <li>(360) 312-FISH (3474)</li>
+          <li class="basicBullet">Shoot us an email:</li>
+          <li>seatac@salmoncookies.com</li>
+        </ul>
+  </div>
+
+  <div class="boxed">
+        <div class="locationName">Seattle Center</div> 
+      
+        <div>
+            <text class="description">It's by Seattle Center!</text>
+        </div>
+          <img id="cutter" src="./assets/cutter.jpeg" alt="Here's the cookie cutter to standardize it all.">
+          <ul>
+            <li class="basicBullet">Visit us:</li>
+            <li>314 2nd Ave, Seattle 98119</li>
+            <li class="basicBullet">Be sure to come between the hours of:</li>
+            <li>6AM and 8PM</li>
+            <li class="basicBullet">Give us a call:</li>
+            <li>(360) 313-FISH (3474)</li>
+            <li class="basicBullet">Shoot us an email:</li>
+            <li>seattlecenter@salmoncookies.com</li>
+          </ul>
+    </div>
+
+    <div class="boxed">
+            <div class="locationName">Capital Hill</div> 
+          
+            <div>
+                <text class="description">A trendy destination!</text>
+            </div>
+              <img id="frosted" src="./assets/frosted-cookie.jpg" alt="Here is one of our finished cookies.">
+              <ul>
+                <li class="basicBullet">Visit us:</li>
+                <li>338 15th Ave E, Seattle 98334</li>
+                <li class="basicBullet">Be sure to come between the hours of:</li>
+                <li>6AM and 8PM</li>
+                <li class="basicBullet">Give us a call:</li>
+                <li>(360) 334-FISH (3474)</li>
+                <li class="basicBullet">Shoot us an email:</li>
+                <li>capitalhill@salmoncookies.com</li>
+              </ul>
+            </div>
+          
+    <div class="boxed">
+                <div class="locationName">Alki</div>
+                
+                <div>
+                  <text class="description">It's by the beach!</text>
+                </div>
+                <img id="chinook" src= "./assets/chinook.jpg" alt="Chinook">
+                <ul>
+                  <li class="basicBullet">Visit us:</li>
+                  <li>967 SW Fish St, Seattle 98106</li>
+                  <li class="basicBullet">Be sure to come between the hours of:</li>
+                  <li>6AM and 8PM</li>
+                  <li class="basicBullet">Give us a call:</li>
+                  <li>(360) 209-FISH (3474)</li>
+                  <li class="basicBullet">Shoot us an email:</li>
+                  <li>alki@salmoncookies.com</li>
+                </ul>
+    </div>
+        
+
+    <div class="boxed">
+
+        <div class="locationName">We have MERCHANDISE!
+        </div> 
+
+        <div><text class="description"> That's right, you can keep the memory alive long after you eat all the cookies. Stop by any of our locations to check out the nonperishables. Online order capabilities coming soon!</text>
+        </div>
+        <div><img id="shirt" src= "./assets/shirt.jpg" alt="Salmon Cookies T-shirt">
+        </div>
+  </div>
 </body>
 </html>
