@@ -9,6 +9,19 @@ img {
   border: 2mm ridge rgba(50, 220, 192, 0.6);
   border-radius: 7px;
 }
+
+table {
+    border: 1mm solid darkblue;
+}
+th {
+  border: 1mm solid purple;
+}
+tr {
+  border: 1mm dashed gray;
+}
+td {
+  border: 1mm dashed darkgreen;
+}
 #famousPat {
   color: darkviolet;
   font-size: 60px;
