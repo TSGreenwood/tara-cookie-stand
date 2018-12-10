@@ -34,12 +34,14 @@ var Store = function (location, minCust, maxCust, aveCookSale) {
     row.appendChild(col);
     // for loop for arr
     for (var j = 0; 0 < allStores.length; j++) {
-      
-      for (var i = 0; 0 < hoursOperation.length; i++)
+
+      for (var i = 0; 0 < hoursOperation.length; i++) {
+
       }
+
     }
 
-// creating totals column
+    // creating totals column
     col = document.createElement('td');
     col.textContent = this.total;
     row.appendChild(col);
