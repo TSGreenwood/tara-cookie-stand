@@ -33,13 +33,12 @@ var Store = function (location, minCust, maxCust, aveCookSale) {
     col.textContent = this.location;
     row.appendChild(col);
     // for loop for arr
-    for (var j = 0; 0 < allStores.length; j++) {
+    // for (var j = 0; i < allStores.length; j++) {
 
-      for (var i = 0; 0 < hoursOperation.length; i++) {
+    //   for (var i = 0; i < hoursOperation.length; i++) {
 
-      }
-
-    }
+    //   }
+    // }
 
     // creating totals column
     col = document.createElement('td');
@@ -55,11 +54,90 @@ var Store = function (location, minCust, maxCust, aveCookSale) {
 
 };
 
-
 new Store('Seattle Center', 11,38, 3.7);
 new Store('a', 1,2,3);
+new Store('1st and Pike', 3, 24, 1.2);
 
 
+
+
+
+
+
+
+// 'Use Strict';
+
+// var hoursOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+// var allStores =[];
+
+// function Store(location, minCust, maxCust, aveCookSale) {
+//   this.location = location;
+//   this.minCust = minCust;
+//   this.maxCust = maxCust;
+//   this.aveCookSale = aveCookSale;
+//   this.cookiesHourly = [];
+//   this.total = 0;
+//   this.ranCustAvg = function() {
+//     return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
+//   };
+//   this.projectedCookie = function() {
+//     for (var i=0; i < hoursOperation.length; i++) {
+//       this.cookiesHourly.push(Math.floor(this.ranCustAvg() * this.aveCookSale));
+//     }
+//   };
+//   this.totalProjected = function() {
+//     for (var i = 0; i < this.cookiesHourly.length; i++) {
+//       this.total = this.total+ this.cookiesHourly[i];
+//     }
+//   };
+//   this.ranCustAvg();
+//   this.projectedCookie();
+//   this.totalProjected();
+//   allStores.push(this);
+// }
+
+// Store.prototype.render = function() {
+
+//   var blah  = document.getElementById('projections');
+//   blah.appendChild(row);
+//   var row = document.createElement('tr');
+//   var col = document.createElement('td');
+//   col.textContent = this.location;
+//   row.appendChild(col);
+
+//   // for loop for arr
+
+//   // for (var z = 0; z < this.hoursOperation; z++) {
+//   //   document.createElement('td');
+//   //   console.log(z);
+//   //   col.textContent = this.cookiesHourly[z];
+//   //   row.appendChild(col);
+//   // }
+
+//   // creating totals column
+//   col = document.createElement('td');
+//   col.textContent = this.total;
+//   row.appendChild(col);
+
+//   this.render();
+// };
+
+//Let's create some instances
+//  location: '1st and Pike',
+//   minCust: 3,
+//   maxCust: 24,
+//   aveCookSale: 1.2,
+// new Store('1st and Pike', 3, 24, 1.2);
+
+
+// for (var j = 0; j < allStores.length; j++) {
+
+
+//   for (var i = 0; 0 < hoursOperation.length; i++) {
+
+//   }
+
+// }
 // this.ranCustAvg();
 // this.projectedCookie();
 // this.totalProjected();
