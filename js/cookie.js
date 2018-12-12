@@ -69,20 +69,48 @@ function headerRow() {
     tdEl.textContent = hoursOperation[i];
     trEl.appendChild(tdEl);
   }
-  var tdEl = document.createElement('td');
+  tdEl = document.createElement('td');
   tdEl.textContent = 'Total';
 
   trEl.appendChild(tdEl);
   storeTable.appendChild(trEl);
 }
 
-headerRow();
+function footerRow() {
+  var hourlyTotals = [];
+  var sumOfSums = 0;
+  var trEl = document.createElement('tr');
+  var tdEl = document.createElement('td');
+  tdEl.textContent = 'Hourly Totals';
+  trEl.appendChild(tdEl);
+  storeTable.appendChild(trEl);
+  // iterate across the rows
+  for (var i = 0; i < hoursOperation.length; i++) {
+    var hourlyTotal = 0;
+    // iterate down the columns
+    for (var j = 0; j < allStores.length; j++) {
+      hourlyTotal = hourlyTotal + allStores[j].cookiesHourly[i];
+    }
+    hourlyTotals.push(hourlyTotal);
+  }
+  for (var k = 0; k < hourlyTotals.length; k++) {
+    sumOfSums += hourlyTotals[k];
+    tdEl = document.createElement('td');
+    tdEl.textContent = hourlyTotals[k];
+    trEl.appendChild(tdEl);
+  }
+  console.log(hourlyTotals);
+  tdEl = document.createElement('td');
+  tdEl.textContent = sumOfSums;
+  trEl.appendChild(tdEl);
+}
 
+headerRow();
 
 
 new Store('Seattle Center', 11,38, 3.7);
 new Store('a', 1,2,3);
 new Store('1st and Pike', 3, 24, 1.2);
 
-
+footerRow();
 
