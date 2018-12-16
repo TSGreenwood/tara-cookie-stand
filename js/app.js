@@ -107,10 +107,11 @@ function footerRow() {
 
 headerRow();
 
-
-new Store('Seattle Center', 11,38, 3.7);
-new Store('a', 1,2,3);
 new Store('1st and Pike', 3, 24, 1.2);
+new Store('SeaTac', 23, 65, 6.3);
+new Store('Seattle Center', 11,38, 3.7);
+new Store('Capitol Hill', 20, 38, 2.3);
+new Store('Alki', 2, 16, 4.6);
 
 footerRow();
 

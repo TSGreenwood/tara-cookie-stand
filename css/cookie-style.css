@@ -11,16 +11,19 @@ img {
 }
 
 table {
-    border: 1mm solid darkblue;
+    border: 3mm ridge darkblue;
+    display: center;
 }
 th {
-  border: 1mm solid purple;
+  border: 2mm solid purple;
+  font-size: 20px;
 }
 tr {
-  border: 1mm dashed gray;
+  border: 1mm solid darkgreen;
+  background-color: aliceblue;
 }
 td {
-  border: 1mm dashed darkgreen;
+  border: 1mm solid darkgreen;
 }
 #famousPat {
   color: darkviolet;
@@ -103,16 +106,16 @@ ul {
 
   /* merch info */
 
- /* #shirt {
+ #shirt {
     height: 200px;
     float: left;
-} */
-/* #shirtSell {
+} 
+
+#shirtSell {
   float: right;
   display: block;
   height: 200px;
   width: 240px;
   padding-right: 100px;
   line-height: 22px;
-  
-} */
+}
